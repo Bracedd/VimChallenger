@@ -11,13 +11,6 @@ An interactive Vim practice website to help users improve their Vim skills throu
 AI Was used to generate the challenges in a specified format
 AI Used: ChatGPT
 
-## Challenges
-- Move to the end of a line.
-- Delete a word.
-- Redo an undone change.
-- Search for a word.
-- Yank (copy) a line.
-
 ## Usage
  Follow the prompts displayed on the screen.
  Use Vim commands and shortcuts to solve the challenges.
