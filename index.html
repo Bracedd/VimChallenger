@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vim Master Challenge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Vim Master Challenge</h1>
+            <nav>
+                <button id="theme-toggle">Toggle Theme</button>
+                <button id="reset-progress">Reset Progress</button>
+            </nav>
+        </header>
+        <main>
+            <div class="vim-window">
+                <div class="vim-titlebar">
+                    <span class="vim-filename">challenge.vim</span>
+                    <span class="vim-mode">NORMAL</span>
+                </div>
+                <div class="vim-content">
+                    <div id="line-numbers"></div>
+                    <div id="text-content"></div>
+                    <div id="cursor"></div>
+                </div>
+                <div class="vim-statusbar">
+                    <span id="current-mode">NORMAL</span>
+                    <span id="cursor-position">1:1</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="challenge-info">
+                    <h2>Current Challenge</h2>
+                    <p id="challenge-description"></p>
+                </div>
+                <div class="input-area">
+                    <input 
+                        type="text" 
+                        id="command-input" 
+                        placeholder="Enter Vim command..." 
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <p id="typed-command"></p>
+                </div>
+                <div class="controls">
+                    <button id="hint-button">Show Hint</button>
+                    <p id="hint"></p>
+                    <p id="feedback"></p>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div id="progress-fill"></div>
+                    </div>
+                    <p id="progress-text">Challenge: <span id="progress">1/10</span></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
